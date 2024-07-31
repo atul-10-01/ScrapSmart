@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Laptop, Mouse, Monitor, Printer, Keyboard, Network, Disc, Tablet, WashingMachine, Microwave, Headphones, Fan, Cable, Battery, CircuitBoard } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -32,14 +33,18 @@ const DumpingPage = () => {
     navigate('/form', { state: { productType } });
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="relative min-h-screen">
       <div
         className="absolute inset-0 bg-cover bg-center h-full opacity-40 will-change-transform"
         style={{ backgroundImage: `url(${dumpBg})` }}
       ></div>
-      <div className="relative z-10 p-4">
-      <div className=" relative flex  justify-start items-center opacity-100 px-4 ml-[0.55rem]">
+      <div className="relative z-10 p-1">
+        <div className=" relative flex  justify-start items-center opacity-100 px-4 ml-[0.55rem]">
           <img src={logo} alt="logo" className="w-13 h-10" />
           <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
         </div>
