@@ -5,6 +5,7 @@ import { devices } from './DumpingPage';
 import { Link } from 'react-router-dom';
 import logo from './assets/logo.png';
 import nameLogo from './assets/name-logo.png';
+import formBg from './assets/form-bg.jpg';
 
 const FormPage = () => {
   const location = useLocation();
@@ -20,7 +21,7 @@ const FormPage = () => {
 
   return (
     <div className="relative h-[100vh] overflow-hidden">
-      <div className='absolute inset-0 bg-[url("/src/assets/form-bg.jpg")] bg-cover bg-center opacity-45'></div>
+      <div className='absolute inset-0 bg-cover bg-center opacity-45' style={{ backgroundImage: `url(${formBg})` }}></div>
       <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
         <img src={logo} alt="logo" className="w-13 h-10" />
         <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>

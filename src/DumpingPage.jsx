@@ -4,6 +4,7 @@ import { Laptop, Mouse, Monitor, Printer, Keyboard, Network, Disc, Tablet, Washi
 import { Link } from 'react-router-dom';
 import logo from './assets/logo.png';
 import nameLogo from './assets/name-logo.png';
+import dumpBg from './assets/dump-bg.jpg';
 
 
 export const devices = [
@@ -33,12 +34,15 @@ const DumpingPage = () => {
 
   return (
     <div className="relative h-[100vh]">
-      <div className="absolute inset-0 bg-[url('src/assets/dump-bg.jpg')] bg-cover bg-center h-full opacity-40 will-change-transform"></div>
+      <div
+        className="absolute inset-0 bg-cover bg-center h-full opacity-40 will-change-transform"
+        style={{ backgroundImage: `url(${dumpBg})` }}
+      ></div>
       <div className="relative z-10 p-4">
-      <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
-        <img src={logo} alt="logo" className="w-13 h-10" />
-        <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
-      </div>
+        <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
+          <img src={logo} alt="logo" className="w-13 h-10" />
+          <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
+        </div>
         <div id='dump'>
           <h3 className='text-xl text-center p-4 capitalize sm:text-2xl'>
             Choose the Product you want to dump
