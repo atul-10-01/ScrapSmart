@@ -16,14 +16,14 @@ const FeatureSection = () => {
       </div>
       <div className="flex flex-wrap justify-center items-center mt-10 lg:mt-10 ">
         {features.map((feature, index) => (
-          <div key={index} className="w-full bg-neutral-900 shadow-sm m-3 md:h-[18rem] sm:w-[85%] md:w-[40%] lg:w-[30%] px-2 py-2 rounded-md hover:shadow-gray-400/40 border border-neutral-800">
+          <div key={index} className="w-full bg-neutral-900 shadow-sm m-3 md:h-[18rem] sm:w-[85%] md:w-[40%] lg:w-[30%] px-2 py-2 rounded-md hover:shadow-gray-400/40 border border-neutral-800 text-neutral-300">
             <div className="flex pt-5 rounded-md">
               <div className="flex mx-2 h-10 w-10 p-2 bg-neutral-900 text-green-600 justify-center items-center rounded-full">
                 {feature.icon}
               </div>
               <div>
-                <h5 className="mt-1 mb-6 text-xl">{feature.text}</h5>
-                <p className="text-md p-2 mb-20 text-neutral-500">
+                <h4 className="mt-1 mb-6 text-xl">{feature.text}</h4>
+                <p className="text-md p-2 mb-20 text-neutral-300 font-normal">
                   {feature.description}
                 </p>
               </div>

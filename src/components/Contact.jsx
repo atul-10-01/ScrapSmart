@@ -11,7 +11,7 @@ const Contact = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-300 hover:text-white"
+                  className="text-neutral-200 hover:text-white"
                 >
                   {link.text}
                 </a>
@@ -26,7 +26,7 @@ const Contact = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-300 hover:text-white"
+                  className="text-neutral-200 hover:text-white"
                 >
                   {link.text}
                 </a>
@@ -34,7 +34,7 @@ const Contact = () => {
             ))}
           </ul>
         </div>
-        <div className=" text-neutral-300 w-[fit-content]">
+        <div className=" text-neutral-200 w-[fit-content]">
           <h3 className=" text-white text-md font-semibold mb-4">Contacts</h3>
           <div className="flex-col space-y-2 sm:space-y-2">
             <p>Rohini Sec-22, New Delhi - 110086</p>

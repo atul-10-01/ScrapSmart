@@ -21,8 +21,8 @@ const Testimonials = () => {
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <div>
-                  <h4 className="font-[400]">{testimonial.user}</h4>
-                  <span className="text-sm font-normal italic text-neutral-600">
+                  <h5 className="font-[400]">{testimonial.user}</h5>
+                  <span className="text-sm font-normal italic text-neutral-300">
                     {testimonial.company}
                   </span>
                 </div>
