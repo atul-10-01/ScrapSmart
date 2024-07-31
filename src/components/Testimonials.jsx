@@ -17,12 +17,12 @@ const Testimonials = () => {
       <div className="flex flex-wrap justify-center mt-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-neutral-900 shadow-sm m-1 md:m-3 h-70  md:w-[40%] lg:w-[30%] px-10 md:px-2 md:py-2 rounded-md hover:shadow-gray-400/40 border border-neutral-800">
-            <div className="rounded-md py-6 sm:p-6 text-md font-thin">
+            <div className="rounded-md py-6 sm:p-6 text-md font-thin text-white">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <div>
                   <h5 className="font-[400]">{testimonial.user}</h5>
-                  <span className="text-sm font-normal italic text-neutral-300">
+                  <span className="text-sm font-thin italic text-neutral-300">
                     {testimonial.company}
                   </span>
                 </div>
