@@ -37,7 +37,7 @@ const Navbar = () => {
                         <Link to="/new-account" className="transition-all duration-300 hover:scale-105 bg-gradient-to-r from-green-500 to-green-700 py-2 px-3 rounded-md">Create an account</Link>
                     </div>
                     <div className="lg:hidden md:flex flex-col justify-end">
-                        <button onClick={toggleMobileDrawer}>{mobileDrawerOpen ? <X /> : <Menu />}</button>
+                        <button aria-label="hamburger-menu" onClick={toggleMobileDrawer}>{mobileDrawerOpen ? <X /> : <Menu />}</button>
                     </div>
                 </div>
                 {mobileDrawerOpen && (
