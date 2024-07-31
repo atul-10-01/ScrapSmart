@@ -26,7 +26,7 @@ const FormPage = () => {
         <img src={logo} alt="logo" className="w-13 h-10" />
         <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
       </div>
-      <div className="relative container w-[90%] sm:w-[500px] xl:w-[415px] mt-4 mx-auto p-4 bg-white bg-opacity-10 rounded-lg backdrop-filter backdrop-blur-sm">
+      <div className="relative flex  justify-start items-center opacity-100 px-4 ml-[0.55rem]">
         <h2 className="text-xl font-bold mb-4 text-white text-center">Dump your E-waste!</h2>
         <form className="space-y-4">
           <div>

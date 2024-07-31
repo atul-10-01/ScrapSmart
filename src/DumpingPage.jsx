@@ -33,13 +33,13 @@ const DumpingPage = () => {
   };
 
   return (
-    <div className="relative h-[100vh]">
+    <div className="relative min-h-screen">
       <div
         className="absolute inset-0 bg-cover bg-center h-full opacity-40 will-change-transform"
         style={{ backgroundImage: `url(${dumpBg})` }}
       ></div>
       <div className="relative z-10 p-4">
-        <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
+      <div className=" relative flex  justify-start items-center opacity-100 px-4 ml-[0.55rem]">
           <img src={logo} alt="logo" className="w-13 h-10" />
           <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
         </div>
