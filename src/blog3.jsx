@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from './assets/logo.png';
+import nameLogo from './assets/name-logo.png';
+import blogBg from './assets/blog-bg.png';
+
 
 const Blog3 = () => {
     useEffect(() => {
@@ -9,8 +13,8 @@ const Blog3 = () => {
     return (
         <div className="relative min-h-screen scroll-smooth">
             <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
-                <img src="src/assets/logo.png" alt="logo" className="w-13 h-10" />
-                <Link to="/"><img src="src/assets/name-logo.png" alt="logo" className="w-28 " /></Link>
+                <img src={logo} alt="logo" className="w-13 h-10" />
+                <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
             </div>
             <h2 className="text-2xl text-center mx-16 sm:mx-8 mt-3 lg:mt-5 sm:text-3xl lg:text-4xl tracking-wide">
                 Importance of Responsible{" "}
@@ -19,7 +23,10 @@ const Blog3 = () => {
                 </span>
             </h2>
 
-            <div className="fixed bg-center mt-20 inset-0 bg-[url('src/assets/blog-bg.png')] bg-no-repeat h-[95%] opacity-45 bg-[length:400px]"></div>
+            <div
+                className="fixed bg-center mt-20 inset-0 bg-no-repeat h-[95%] opacity-45"
+                style={{ backgroundImage: `url(${blogBg})`, backgroundSize: '400px' }}
+            ></div>
             <div className="relative mt-10 mx-auto px-12">
                 <h3 className="text-lg sm:text-2xl font-[400] mb-2 tracking-wide">Introduction</h3>
                 <p className="text-sm sm:text-base font-light mb-6">
@@ -35,7 +42,7 @@ const Blog3 = () => {
                 </p>
                 <h3 className="text-lg sm:text-2xl font-[400] mb-2 tracking-wide">Steps Towards Responsible E-Waste Disposal</h3>
                 <p className="text-sm sm:text-base font-light mb-6">
-                   <p className='mb-2'> 1. <span className='font-medium'>Educate Yourself and Others:</span> Awareness is the first step towards responsible e-waste disposal. Educate yourself and your community about the environmental and health risks associated with e-waste. Share information on proper disposal methods and recycling options through social media, community events, and educational programs. </p>
+                    <p className='mb-2'> 1. <span className='font-medium'>Educate Yourself and Others:</span> Awareness is the first step towards responsible e-waste disposal. Educate yourself and your community about the environmental and health risks associated with e-waste. Share information on proper disposal methods and recycling options through social media, community events, and educational programs. </p>
 
                     <p className='mb-2'>2. <span className='font-medium'>Utilize E-Waste Recycling Programs:</span> Many manufacturers, retailers, and local governments offer e-waste recycling programs. Take advantage of these programs to ensure that your electronic devices are disposed of properly. Look for certified e-waste recycling facilities that follow environmentally sound practices and adhere to regulatory standards.</p>
 

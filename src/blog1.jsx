@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from './assets/logo.png';
+import nameLogo from './assets/name-logo.png';
+import blogBg from './assets/blog-bg.png';
 
 const Blog1 = () => {
   useEffect(() => {
@@ -9,8 +12,8 @@ const Blog1 = () => {
   return (
     <div className="relative min-h-screen scroll-smooth">
       <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
-        <img src="src/assets/logo.png" alt="logo" className="w-13 h-10" />
-        <Link to="/"><img src="src/assets/name-logo.png" alt="logo" className="w-28 " /></Link>
+        <img src={logo} alt="logo" className="w-13 h-10" />
+        <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
       </div>
       <h2 className="text-2xl text-center mx-16 sm:mx-2 mt-3 lg:mt-0 sm:text-3xl lg:text-4xl tracking-wide">
         Understanding{" "}
@@ -18,8 +21,10 @@ const Blog1 = () => {
           Electronic Waste
         </span>
       </h2>
-
-      <div className="fixed bg-center mt-20 inset-0 bg-[url('src/assets/blog-bg.png')] bg-no-repeat h-[95%] opacity-45 bg-[length:400px]"></div>
+      <div
+        className="fixed bg-center mt-20 inset-0 bg-no-repeat h-[95%] opacity-45"
+        style={{ backgroundImage: `url(${blogBg})`, backgroundSize: '400px' }}
+      ></div>
       <div className="relative mt-10 mx-auto px-12">
         <h3 className="text-lg sm:text-2xl font-[400] mb-2 tracking-wide">Introduction</h3>
         <p className="text-sm sm:text-base font-light mb-6">

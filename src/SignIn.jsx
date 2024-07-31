@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from './assets/logo.png';
+import nameLogo from './assets/name-logo.png';
+import gIcon from './assets/g-icon.png';
+import coin from './assets/coins.png';
 
 
 const Signin = () => {
@@ -10,13 +14,13 @@ const Signin = () => {
         <div className="relative h-[100vh] overflow-scroll">
             <div className='absolute inset-0 bg-[url("/src/assets/signup-bg.jpg")] bg-cover bg-center opacity-45'></div>
             <div className=" relative flex  justify-start items-center opacity-100 px-4 ml-[0.55rem]">
-              <img src="src\assets\logo.png" alt="logo" className="w-13 h-10" />
-              <Link to="/"><img src="src\assets\name-logo.png" alt="logo" className="w-28 "/></Link> 
+            <img src={logo} alt="logo" className="w-13 h-10" />
+            <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
             </div>
 
             <div className="relative container w-[90%] sm:w-[500px] xl:w-[415px] mt-4 mx-auto p-4 bg-white bg-opacity-10 rounded-lg backdrop-filter backdrop-blur-sm">
                 <div className=" relative flex ml-5 sm:ml-11 items-center opacity-100 px-4">
-                    <img src="src\assets\coins.png" alt="logo" className="w-11 m-1" />
+                    <img src={coin} alt="logo" className="w-11 m-1" />
                     <h2 className="text-xl font-bold text-white text-center">Welcome Back!</h2>
                 </div>
                 <p className='text-xs font-extralight text-center'>Sign in to track and earn more G-Coins</p>
@@ -50,7 +54,7 @@ const Signin = () => {
                     </div>
                     <div className='flex justify-center'>
                         <a href="#" className=" flex items-center p-[0.2rem] w-[270px] border text-white rounded hover:bg-[#12111085]">
-                            <img src="src\assets\g-icon.png" alt="logo" className="h-8 " />
+                            <img src={gIcon} alt="logo" className="h-8 " />
                             <span className='ml-[5%] font-medium'>Continue with Google</span>
                         </a>
                     </div>

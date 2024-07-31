@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const Blogs = () => {
   return (
     <div id='blogs' className='relative border-t mt-20 border-neutral-800 min-h-[800px]'>
