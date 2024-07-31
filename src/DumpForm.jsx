@@ -22,7 +22,7 @@ const FormPage = () => {
   return (
     <div className="relative h-[100vh] overflow-hidden">
       <div className='absolute inset-0 bg-cover bg-center opacity-45' style={{ backgroundImage: `url(${formBg})` }}></div>
-      <div className="relative flex  justify-start items-center opacity-100 px-4 ml-[0.55rem]">
+      <div className="relative flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
         <img src={logo} alt="logo" className="w-13 h-10" />
         <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
       </div>

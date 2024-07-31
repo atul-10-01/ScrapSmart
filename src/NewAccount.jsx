@@ -46,9 +46,9 @@ const NewAccount = () => {
             </div>
 
             <div className="relative container w-[90%] sm:w-[500px] xl:w-[415px] mt-4 mx-auto p-4 bg-white bg-opacity-10 rounded-lg backdrop-filter backdrop-blur-sm">
-                <div className="relative flex items-center opacity-100 md:ml-8 xl:ml-0 sm:px-4">
+                <div className="relative flex items-center opacity-100 md:ml-8 xl:ml-0 max-[387px]:ml-10  sm:px-4">
                     <img src={coin} alt="logo" className="w-11 mr-2" />
-                    <h2 className="min-[411px]:text-xl text-[1.18rem] font-bold text-white sm:text-center">Welcome to ScrapSmart !</h2>
+                    <h2 className="min-[411px]:text-xl text-[1.18rem] font-bold text-white sm:text-center">Welcome to ScrapSmart!</h2>
                 </div>
                 <p className='text-xs font-extralight text-center'>Register now to earn G-Coins</p>
 
@@ -108,7 +108,7 @@ const NewAccount = () => {
                         </span>
                     </div>
                     {successMessage && (
-                        <div className="text-green-500 text-center my-2 animate-fadeScale">
+                        <div className="text-green-700 text-center my-2 animate-fadeScale">
                             {successMessage}
                         </div>
                     )}
