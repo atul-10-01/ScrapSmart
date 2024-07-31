@@ -11,7 +11,7 @@ const Contact = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-200 hover:text-white hover:font-medium"
+                  className="font-light hover:font-normal"
                 >
                   {link.text}
                 </a>
@@ -26,7 +26,7 @@ const Contact = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-200 hover:text-white hover:font-medium"
+                  className="font-light hover:font-normal"
                 >
                   {link.text}
                 </a>
@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
         <div className=" text-neutral-200 w-[fit-content]">
           <h3 className=" text-white text-md font-normal mb-4 hover:font-medium">Contacts</h3>
-          <div className="flex-col space-y-2 sm:space-y-2">
+          <div className="flex-col font-light space-y-2 sm:space-y-2">
             <p>Rohini Sec-22, New Delhi - 110086</p>
             <div class="flex items-center gap-1">
               <Mail className="w-6 h-6"/>
