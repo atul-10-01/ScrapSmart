@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+
+Sitemap: https://scrap-smart.vercel.app/sitemap.xml
