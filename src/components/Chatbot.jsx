@@ -146,7 +146,6 @@ const Chatbot = () => {
       { sender: 'bot', text: botMessage },
     ]);
 
-    
     if (option === "Pickup scheduling") {
       document.getElementById('hero-section')?.scrollIntoView({ behavior: 'smooth' });
     } else if (option === "Blogs") {
@@ -191,7 +190,7 @@ const Chatbot = () => {
         <BotMessageSquare size={30} />
       </button>
       {isOpen && (
-        <div className="fixed bottom-24 right-5 w-[90%] h-[60%] sm:w-96 sm:h-[31rem] bg-neutral-900 shadow-lg border border-green-900 border-t-0 rounded-lg flex flex-col">
+        <div className="fixed bottom-24 right-5 w-[90%] max-w-sm h-[60%] sm:w-96 sm:h-[31rem] bg-neutral-900 shadow-lg border border-green-900 border-t-0 rounded-lg flex flex-col">
           <div className="bg-green-700 text-white p-3 flex items-center rounded-t-lg">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9izsEt0LSmCTgwjKeChZLE1YYXEKuS-K4g&usqp=CAU"
@@ -241,10 +240,10 @@ const Chatbot = () => {
             ))}
             <div ref={chatEndRef} /> 
           </div>
-          <div className="p-3 flex">
+          <div className="p-3 flex items-center">
             <input
               type="text"
-              className="flex-1 p-2 border bg-neutral-900 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-lg text-gray-50 font-extralight max-[330px]:w-[50%] text-sm"
+              className="flex-1 p-2 border bg-neutral-900 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-lg text-gray-50 font-extralight text-sm max-w-full"
               value={inputValue}
               onChange={handleInputChange}
               onKeyPress={handleKeyPress}
@@ -252,7 +251,7 @@ const Chatbot = () => {
             />
             <button
               onClick={handleSendMessage}
-              className="bg-green-500 text-white p-2 rounded-lg ml-2 max-[330px]:text-sm"
+              className="bg-green-500 text-white p-2 rounded-lg ml-2 text-sm"
             >
               Send
             </button>
