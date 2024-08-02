@@ -241,10 +241,10 @@ const Chatbot = () => {
             ))}
             <div ref={chatEndRef} /> 
           </div>
-          <div className="p-3 w-[98%] flex">
+          <div className="p-3 flex">
             <input
               type="text"
-              className="flex-1 p-2 border bg-neutral-900 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-lg text-gray-50 font-extralight"
+              className="flex-1 p-2 border bg-neutral-900 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-lg text-gray-50 font-extralight max-[330px]:w-[50%] text-sm"
               value={inputValue}
               onChange={handleInputChange}
               onKeyPress={handleKeyPress}
@@ -252,7 +252,7 @@ const Chatbot = () => {
             />
             <button
               onClick={handleSendMessage}
-              className="bg-green-500 text-white p-2 rounded-lg ml-2 max-[350px]:text-xs"
+              className="bg-green-500 text-white p-2 rounded-lg ml-2 max-[330px]:text-sm"
             >
               Send
             </button>
