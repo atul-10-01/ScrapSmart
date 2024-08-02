@@ -5,7 +5,7 @@ import Workflow from "./components/Workflow";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import Blogs from "./components/Blogs";
-
+import Chatbot from "./components/Chatbot";
 const App = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const App = () => {
         <FeatureSection />
         <Workflow />
         <Blogs />
+        <Chatbot />
         <Testimonials />
         <Contact />
       </div>

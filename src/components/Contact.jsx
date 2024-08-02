@@ -35,7 +35,7 @@ const Contact = () => {
           </ul>
         </div>
         <div className=" w-[fit-content]">
-          <h3 className=" text-white text-md font-normal mb-4 hover:font-medium">Contacts</h3>
+          <h3 className=" text-white text-md font-medium mb-4">Contacts</h3>
           <div className="flex-col font-light space-y-2 sm:space-y-2">
             <p>Rohini Sec-22, New Delhi - 110086</p>
             <div class="flex items-center gap-1">
