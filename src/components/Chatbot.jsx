@@ -106,7 +106,7 @@ const Chatbot = () => {
               ],
             },
           ]);
-        }, 2000); // Adjust the delay as needed
+        }, 2000); 
       }
     }
   };
@@ -146,7 +146,7 @@ const Chatbot = () => {
       { sender: 'bot', text: botMessage },
     ]);
 
-    // Handle scrolling to specific sections
+    
     if (option === "Pickup scheduling") {
       document.getElementById('hero-section')?.scrollIntoView({ behavior: 'smooth' });
     } else if (option === "Blogs") {
@@ -191,7 +191,7 @@ const Chatbot = () => {
         <BotMessageSquare size={30} />
       </button>
       {isOpen && (
-        <div className="fixed bottom-24 right-5 w-96 h-[31rem] bg-neutral-900 shadow-lg border border-green-900 border-t-0 rounded-lg flex flex-col">
+        <div className="fixed bottom-24 right-5 w-[90%] h-[60%] sm:w-96 sm:h-[31rem] bg-neutral-900 shadow-lg border border-green-900 border-t-0 rounded-lg flex flex-col">
           <div className="bg-green-700 text-white p-3 flex items-center rounded-t-lg">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9izsEt0LSmCTgwjKeChZLE1YYXEKuS-K4g&usqp=CAU"
