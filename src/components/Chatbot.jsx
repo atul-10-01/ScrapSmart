@@ -243,7 +243,7 @@ const Chatbot = () => {
           <div className="p-3 flex items-center w-[85%] sm:w-full">
             <input
               type="text"
-              className="flex-1 p-2 border bg-neutral-900 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-lg text-gray-50 font-extralight text-sm max-[300px]:w-[55vw]"
+              className="flex-1 p-2 border bg-neutral-900 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-lg text-gray-50 font-extralight text-sm max-[300px]:w-[50%]"
               value={inputValue}
               onChange={handleInputChange}
               onKeyPress={handleKeyPress}
