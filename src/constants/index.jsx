@@ -5,9 +5,6 @@ import { HandCoins } from "lucide-react";
 import { BellDot } from "lucide-react";
 import { Users } from "lucide-react";
 
-
-
-
 export const navItems = [
   { label: "Features", href: "#features" },
   { label: "Workflow", href: "#workflow" },
@@ -15,8 +12,6 @@ export const navItems = [
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
-
-
 
 export const metroStations = {
   red: ['Shaheed Sthal', 'Hindon River', 'Arthala', 'Mohan Nagar', 'Shyam Park', 'Major Mohit Sharma', 'Rajendra Nagar', 'Shaheed Nagar', 'Dilshad Garden', 'Jhilmil', 'Mansarovar Park', 'Shahdara', 'Welcome', 'Seelampur', 'Shastri Park', 'Kashmere Gate', 'Tis Hazari', 'Pul Bangash', 'Pratap Nagar', 'Shastri Nagar', 'Inderlok', 'Kanhaiya Nagar', 'Keshav Puram', 'Netaji Subhash Place', 'Kohat Enclave', 'Pitampura', 'Rohini East', 'Rohini West', 'Rithala'],
@@ -143,10 +138,4 @@ export const platformLinks = [
   { href: "#", text: "Release Notes" },
 ];
 
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
-];
+
