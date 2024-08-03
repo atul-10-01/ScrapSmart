@@ -51,14 +51,6 @@ const Chatbot = () => {
       setMessages(newMessages);
       setInputValue('');
 
-      const handleBotResponse = () => {
-        const botResponse = getBotResponse(capitalizedInput.toLowerCase());
-        setMessages((prevMessages) => [
-          ...prevMessages,
-          { sender: 'bot', text: botResponse },
-        ]);
-      };
-
       if (!userName) {
         setUserName(capitalizedInput);
         setMessages((prevMessages) => [
@@ -67,9 +59,6 @@ const Chatbot = () => {
             sender: 'bot',
             text: `Welcome ${capitalizedInput}! How can I assist you today?`,
           },
-        ]);
-        setMessages((prevMessages) => [
-          ...prevMessages,
           {
             sender: 'bot',
             text: 'Choose an option below:',
@@ -80,18 +69,15 @@ const Chatbot = () => {
               "Know about Prakriti",
               "Our centers",
               "Carbon footprint tracking",
-              "Blogs",
             ],
           },
         ]);
       } else {
         setTimeout(() => {
-          handleBotResponse();
-        }, 1000);
-
-        setTimeout(() => {
+          const botResponse = getBotResponse(capitalizedInput.toLowerCase());
           setMessages((prevMessages) => [
             ...prevMessages,
+            { sender: 'bot', text: botResponse },
             {
               sender: 'bot',
               text: 'Choose an option below:',
@@ -102,11 +88,10 @@ const Chatbot = () => {
                 "Know about Prakriti",
                 "Our centers",
                 "Carbon footprint tracking",
-                "Blogs",
               ],
             },
           ]);
-        }, 2000);
+        }, 1000);
       }
     }
   };
@@ -122,7 +107,7 @@ const Chatbot = () => {
       hi: "Hi there! How can I assist you today?",
       hey: "Hey there! How can I assist you today?",
       hello: "Hello! I'm Prakriti, your environmental chatbot. How can I help you today?",
-      help: "Sure!",
+      help: "Sure! How can I assist you?",
       bye: "Goodbye! Have a great day!",
       default: "I'm sorry, I didn't understand that. Do you want to connect with an expert?",
     };
@@ -137,7 +122,6 @@ const Chatbot = () => {
       "Know about Prakriti": "Prakriti is here to assist you with all your environmental queries and activities. Whether you need help with recycling e-waste or tips on sustainable living, Prakriti has got you covered. Join us in our mission to create a greener, cleaner future together!",
       "Our centers": "We have several collection centers near metro stations in Delhi-NCR. Find the nearest one on our dumping page.",
       "Carbon footprint tracking": "Track your carbon footprint reduction by using our e-waste collection services.",
-      "Blogs": "Check out our blog section for latest updates and tips on environmental sustainability.",
     };
 
     const botMessage = descriptions[option] || "I'm sorry, I didn't understand that option.";
@@ -147,9 +131,7 @@ const Chatbot = () => {
     ]);
 
     if (option === "Pickup scheduling") {
-      document.getElementById('hero-section')?.scrollIntoView({ behavior: 'smooth' });
-    } else if (option === "Blogs") {
-      document.getElementById('blogs')?.scrollIntoView({ behavior: 'smooth' });
+      // Scroll to the scheduling section
     } else {
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -163,7 +145,6 @@ const Chatbot = () => {
             "Know about Prakriti",
             "Our centers",
             "Carbon footprint tracking",
-            "Blogs",
           ],
         },
       ]);
@@ -185,7 +166,7 @@ const Chatbot = () => {
     <div className="fixed bottom-5 right-5 z-50" ref={chatbotRef}>
       <button
         onClick={toggleChat}
-        className="bg-gradient-to-r from-orange-500 to-orange-800 text-white p-4 rounded-full shadow-lg focus:outline-none hover:bg-green-600 hover:shadow-md hover:shadow-gray-200/40 hover:scale-105 transition-all duration-100 align-middle"
+        className="bg-gradient-to-r from-orange-500 to-orange-800 text-white p-4 rounded-full shadow-lg focus:outline-none hover:bg-green-600 hover:shadow-md hover:shadow-gray-200/40 hover:scale-105 transition-all duration-100 align-middle" aria-label='chatbot'
       >
         <BotMessageSquare size={30} />
       </button>

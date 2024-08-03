@@ -21,7 +21,7 @@ const Testimonials = () => {
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <div>
-                  <h5 className="font-[400]">{testimonial.user}</h5>
+                  <h6 className="font-[400]">{testimonial.user}</h6>
                   <span className="text-sm font-thin italic text-neutral-300">
                     {testimonial.company}
                   </span>
