@@ -1,5 +1,8 @@
-import { Mail, Phone } from "lucide-react";
-import { resourcesLinks, platformLinks, communityLinks } from "../constants";
+import { Mail, Phone, X } from "lucide-react";
+import { resourcesLinks, platformLinks } from "../constants";
+import xLogo from '../assets/x-logo.jpg';
+import instaLogo from '../assets/insta-logo.png';
+
 const Contact = () => {
   return (
     <footer id="contact" className="mt-20 border-t py-10 border-neutral-700">
@@ -39,22 +42,30 @@ const Contact = () => {
           <div className="flex-col font-light space-y-2 sm:space-y-2">
             <p>Rohini Sec-22, New Delhi - 110086</p>
             <div class="flex items-center gap-1">
-              <Mail className="w-6 h-6"/>
-              <span>atulknag@gmail.com</span>
+              <Mail className="w-6 h-6" />
+              <a href="mailto:scrapsmart.info@gmail.com" class="hover:underline">
+                <span>scrapsmart.info@gmail.com</span>
+              </a>
             </div>
-            <div class="flex items-center gap-1">
-              <Mail className="w-6 h-6"/>
-              <span>rudrr1bansal@gmail.com</span>
-            </div>
-            <div class="flex items-center gap-1">
-              <Phone className="w-6 h-6" />
-              <span>+91 7454863935 </span>
-            </div>
+
+
+
             <div class="flex items-center gap-1">
               <Phone className="w-6 h-6" />
-              <span>+91 9354905265 </span>
+              <a href="tel:+919354905265" class="hover:underline">
+                <span>+91 9354905265</span>
+              </a>
             </div>
-            
+
+            <div class="flex items-center mt-2 gap-3">
+              <a href="https://x.com/ScrapingSmarter">
+                <img src={xLogo} alt="logo" className="w-8 rounded-full cursor-pointer hover:brightness-125 transition-all duration-200" />
+              </a>
+              <a href="https://www.instagram.com/scrap.smart/">
+                <img src={instaLogo} alt="logo" className="w-7 rounded-full cursor-pointer hover:brightness-125" />
+              </a>
+            </div>
+
 
 
           </div>

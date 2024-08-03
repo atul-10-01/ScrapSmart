@@ -106,7 +106,7 @@ const Chatbot = () => {
               ],
             },
           ]);
-        }, 2000); 
+        }, 2000);
       }
     }
   };
@@ -134,7 +134,7 @@ const Chatbot = () => {
       "Pickup scheduling": "To schedule a pickup, please visit our scheduling page or contact us directly.",
       "Check coins": "Please login first in order to track your coins!",
       "ScrapSmart initiative": "Our ScrapSmart Initiative focuses on reducing e-waste and promoting recycling.",
-      "Know about Prakriti": "Prakriti is here to assist you with environmental queries and activities.",
+      "Know about Prakriti": "Prakriti is here to assist you with all your environmental queries and activities. Whether you need help with recycling e-waste or tips on sustainable living, Prakriti has got you covered. Join us in our mission to create a greener, cleaner future together!",
       "Our centers": "We have several collection centers near metro stations in Delhi-NCR. Find the nearest one on our dumping page.",
       "Carbon footprint tracking": "Track your carbon footprint reduction by using our e-waste collection services.",
       "Blogs": "Check out our blog section for latest updates and tips on environmental sustainability.",
@@ -210,11 +210,10 @@ const Chatbot = () => {
             {messages.map((msg, index) => (
               <div
                 key={index}
-                className={`chat-message ${
-                  msg.sender === 'bot'
+                className={`chat-message ${msg.sender === 'bot'
                     ? 'bg-neutral-800 text-white self-start'
                     : 'bg-green-700 text-white self-end'
-                } p-2 mb-2 rounded-lg text-sm font-extralight`}
+                  } p-2 mb-2 rounded-lg text-sm font-extralight`}
                 style={{
                   borderRadius:
                     msg.sender === 'bot'
@@ -238,7 +237,7 @@ const Chatbot = () => {
                 )}
               </div>
             ))}
-            <div ref={chatEndRef} /> 
+            <div ref={chatEndRef} />
           </div>
           <div className="p-3 flex items-center w-[85%] sm:w-full">
             <input
