@@ -43,7 +43,7 @@ const NewAccount = () => {
             <div className='absolute inset-0 bg-[url("/src/assets/signup-bg.jpg")] bg-cover bg-center opacity-45'></div>
             <div className="relative flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
                 <img src={logo} alt="logo" className="w-13 h-10" />
-                <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
+                <Link to="/"><img src={nameLogo} alt="logo" className="w-28 hover:brightness-150 transition-all duration-200" /></Link>
             </div>
 
             <div className="relative container w-[90%] sm:w-[500px] xl:w-[415px] mt-4 mx-auto p-4 bg-white bg-opacity-10 rounded-lg backdrop-filter backdrop-blur-sm">

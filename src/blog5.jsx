@@ -14,7 +14,7 @@ const Blog5 = () => {
     <div className="relative min-h-screen scroll-smooth">
       <div className="sticky top-0 z-50 backdrop-blur-md flex justify-start items-center opacity-100 px-4 ml-[0.55rem]">
         <img src={logo} alt="logo" className="w-13 h-10" />
-        <Link to="/"><img src={nameLogo} alt="logo" className="w-28 " /></Link>
+        <Link to="/"><img src={nameLogo} alt="logo" className="w-28 hover:brightness-150 transition-all duration-200" /></Link>
       </div>
       <h2 className="text-2xl text-center mx-16 sm:mx-8 mt-3 lg:mt-5 sm:text-3xl lg:text-4xl tracking-wide">
         Where Does Your{" "}

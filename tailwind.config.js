@@ -6,11 +6,11 @@ export default {
       keyframes: {
         fadeScale: {
           '0%': { opacity: '0', transform: 'scale(1)' },
-          '100%': { opacity: '1', transform: 'scale(1.10)' },
+          '100%': { opacity: '1', transform: 'scale(1.05)' },
         },
       },
       animation: {
-        fadeScale: 'fadeScale 1s ease-in forwards',
+        fadeScale: 'fadeScale 0.7s ease-in forwards',
       },
     },
   },
