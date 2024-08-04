@@ -22,7 +22,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-start">
                         <img src={logo} alt="logo" className="w-13 h-10" />
                         <button onClick={scrollToTop}>
-                            <img src={nameLogo} alt="logo" className="w-28 mt-0" />
+                            <img src={nameLogo} alt="logo" className="w-28 mt-0 hover:brightness-150 transition-all duration-200" />
                         </button>
                     </div>
                     <ul className="hidden lg:flex ml-4 space-x-10 xl:space-x-12">

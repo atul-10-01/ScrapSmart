@@ -127,7 +127,7 @@ const DumpingPage = () => {
         </div>
         {showNotification && (
           <div className='max-xl:flex max-xl:items-center'>
-            <div className="fixed bottom-4 right-[23%] md:right-[35%] lg:top-24 lg:right-4 text-sm lg:text-xs font-light bg-green-700 bg-opacity-100 py-3 xl:py-2 px-10 xl:px-4 rounded transition-opacity duration-100 animate-fadeScale xl:h-8 ">
+            <div className="fixed bottom-4 right-[19%] md:right-[35%] lg:top-24 lg:right-4 text-sm lg:text-xs font-light bg-green-700 bg-opacity-100 py-3 lg:py-2 px-10 lg:px-4 rounded transition-opacity duration-100 animate-fadeScale lg:h-8 ">
               *Added to Dump Cart
             </div>
           </div>
