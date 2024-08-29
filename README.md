@@ -1,8 +1,11 @@
-# React + Vite
+# ScrapSmart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ScrapSmart is a fully responsive e-waste management website built with ReactJS and Tailwind CSS. The platform features an AI-powered chatbot, informative blogs, and a G-Coins reward system to encourage proper e-waste disposal.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- AI-powered chatbot for real-time assistance
+- Reward system with redeemable G-Coins
+- Multiple dumping options: **Home pickup** or drop-off at designated **dumping sites**
+- Informative blogs on e-waste management
+- User-friendly interface and responsive design
