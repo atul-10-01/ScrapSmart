@@ -192,7 +192,7 @@ const Chatbot = () => {
     const descriptions = {
       "ScrapSmart initiative": "ScrapSmart is a digital platform aimed at solving India's e-waste problem by promoting responsible disposal through gamification and community engagement. Users earn redeemable coins for each item they dispose of, encouraging environmental responsibility.",
       "Schedule Pickup": "Great! Let's schedule a pickup for you. Please select your device category from the dropdown menu below:",
-      "Schedule Drop-off": "Great! Let's schedule a drop-off for you. Please choose your preferred drop-off location:",
+      "Schedule Drop-off": "Great! Let's schedule a drop-off for you. Please choose your preferred drop-off:",
       "Track your rewards": "Please login to your account to track your rewards. You can redeem these rewards for discounts at our partner stores."
     };
     
@@ -274,6 +274,7 @@ const Chatbot = () => {
       ...prevMessages,
       { sender: 'user', text: localStore },
       { sender: 'bot', text: `You've selected ${localStore}. You will soon receive a confirmation email.` },
+
       {
         sender: 'bot',
         text: 'Is there anything else I can help you with?',
@@ -388,7 +389,7 @@ const Chatbot = () => {
                 <Dropdown
                   options={["Metro Stations", "Local Store"]}
                   onSelect={handleDropoffLocationSelect}
-                  placeholder="Select drop-off location"
+                  placeholder="Select preferred drop-off"
                 />
               </div>
             )}
