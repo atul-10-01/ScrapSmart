@@ -5,6 +5,7 @@ import nameLogo from './assets/name-logo.png';
 import gIcon from './assets/g-icon.png';
 import coin from './assets/coins.png';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Importing the icons
+import { SquareArrowOutUpRight } from 'lucide-react';
 
 const Signin = () => {
     const [email, setEmail] = useState('');
@@ -72,6 +73,13 @@ const Signin = () => {
                             Sign In
                         </button>
                     </div>
+                    <div className="mt-4 w-full p-2 text-white rounded ">
+                        <Link to="/dashboard" className="flex items-center space-x-2">
+                            <span className='hover:underline'>Dashboard</span>
+                            <SquareArrowOutUpRight className="hover:scale-105" />
+                        </Link>
+                    </div>
+
                     <div className='flex justify-center'>
                         <a href="#" className="flex items-center p-[0.2rem] w-[270px] border text-white rounded hover:bg-[#12111085]">
                             <img src={gIcon} alt="logo" className="h-8 " />

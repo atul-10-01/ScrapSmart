@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { metroStations } from './constants';
+import { metroStations1 } from './constants';
 import { devices } from './DumpingPage';
 import { Link } from 'react-router-dom';
 import logo from './assets/logo.png';
 import nameLogo from './assets/name-logo.png';
 import formBg from './assets/form-bg.jpg';
 import emptyCart from './assets/empty-cart.png';
+
 
 const FormPage = () => {
   const location = useLocation();
@@ -17,6 +18,10 @@ const FormPage = () => {
   const [address, setAddress] = useState('');
   const [metroLine, setMetroLine] = useState('');
   const [metroStation, setMetroStation] = useState('');
+  const [pinCode, setPinCode] = useState('');
+  const [localStore, setLocalStore] = useState('');
+
+ 
 
   return (
     <div className="relative min-h-screen">
@@ -80,7 +85,7 @@ const FormPage = () => {
               />
             </div>
             <div>
-              <label className="block mb-[0.3rem] text-white">Pickup Option</label>
+              <label className="block mb-[0.3rem] text-white">Pickup and drop off Option</label>
               <select
                 className="w-full p-2 border text-black bg-slate-300 border-gray-800 rounded focus:ring-green-800 focus:border-green-800"
                 value={pickupOption}
@@ -88,7 +93,8 @@ const FormPage = () => {
                 required
               >
                 <option value="home">Home Pickup</option>
-                <option value="dumpingSite">Dumping Site</option>
+                <option value="metroStation">Metro Drop off</option>
+                <option value="localStore">Local Store Drop off</option>
               </select>
             </div>
             {pickupOption === 'home' ? (
@@ -102,7 +108,7 @@ const FormPage = () => {
                   required
                 />
               </div>
-            ) : (
+            ) : pickupOption === 'metroStation' ? (
               <>
                 <div>
                   <label className="block mb-[0.3rem] text-white">Nearest Metro Line</label>
@@ -131,11 +137,41 @@ const FormPage = () => {
                       required
                     >
                       <option value="">Select Station</option>
-                      {metroStations[metroLine].map((station) => (
+                      {metroStations1[metroLine].map((station) => (
                         <option key={station} value={station}>
                           {station}
                         </option>
                       ))}
+                    </select>
+                  </div>
+                )}
+              </>
+            ) : (
+              <>
+                <div>
+                  <label className="block mb-[0.3rem] text-white">Pin Code</label>
+                  <input
+                    type="text"
+                    className="w-full p-2 border text-black bg-slate-300 border-gray-800 rounded focus:ring-green-800 focus:border-green-800"
+                    value={pinCode}
+                    onChange={(e) => setPinCode(e.target.value)}
+                    required
+                  />
+                </div>
+                {pinCode && (
+                  <div>
+                    <label className="block mb-[0.3rem] text-white">Select Local Store</label>
+                    <select
+                      className="w-full p-2 border text-black bg-slate-300 border-gray-800 rounded focus:ring-green-800 focus:border-green-800"
+                      value={localStore}
+                      onChange={(e) => setLocalStore(e.target.value)}
+                      required
+                    >
+                      <option value="">Select Store</option>
+                      <option value="Jio Smart Bazaar">Jio Smart Bazaar</option>
+                      <option value="D Mart">D Mart</option>
+                      <option value="Big Bazaar">Big Bazaar</option>
+                      <option value="Reliance Fresh">Reliance Fresh</option>
                     </select>
                   </div>
                 )}

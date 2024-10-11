@@ -13,7 +13,7 @@ import Blog3 from './blog3.jsx';
 import Blog4 from './blog4.jsx';
 import Blog5 from './blog5.jsx';
 import Blog6 from './blog6.jsx';
-
+import Dashboard from './Dashboard.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -30,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/blog4" element={<Blog4 />} />
         <Route path="/blog5" element={<Blog5 />} />
         <Route path="/blog6" element={<Blog6 />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   </React.StrictMode>
